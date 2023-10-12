@@ -9,8 +9,8 @@ builder.Services.AddDbContext<MyDatabaseContext>(options =>
 //builder.Services.AddDistributedMemoryCache();
 builder.Services.AddStackExchangeRedisCache(options =>
 {
-options.Configuration = builder.Configuration["AZURE_REDIS_CONNECTIONSTRING"];
-options.InstanceName = "SampleInstance";
+    options.Configuration = builder.Configuration["AZURE_REDIS_CONNECTIONSTRING"];
+    options.InstanceName = "SampleInstance";
 });
 
 
